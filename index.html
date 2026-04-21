@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panadería Luna — Pan artesanal de masa madre en el corazón de Bogotá</title>
+  <meta name="description" content="Panadería Luna — Pan artesanal de masa madre en el corazón de Bogotá" />
+  <meta name="theme-color" content="#8B4513" />
+  <meta property="og:title" content="Panadería Luna" />
+  <meta property="og:description" content="Panadería Luna — Pan artesanal de masa madre en el corazón de Bogotá" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?business,local" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script type='application/ld+json'>{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Panadería Luna", "description": "Pan artesanal de masa madre en el corazón de Bogotá", "url": "", "address": {"@type": "PostalAddress", "streetAddress": "Cra 13 #85-32, Chapinero"}, "telephone": "+573001234567", "sameAs": ["https://instagram.com/panaderialuna"]}</script>
+  <style>
+    :root { --brand: #8B4513; --accent: #F5A623; }
+    html, body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text { background: linear-gradient(120deg, var(--brand) 0%, var(--accent) 100%);
+                       -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-bg { background:
+        radial-gradient(1100px 500px at 10% -10%, color-mix(in srgb, var(--brand) 18%, transparent), transparent 60%),
+        radial-gradient(900px 420px at 95% 10%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 60%),
+        linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%); }
+    .grid-bg {
+        background-image: linear-gradient(rgba(15,23,42,0.04) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(15,23,42,0.04) 1px, transparent 1px);
+        background-size: 48px 48px;
+    }
+    [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+    [data-reveal].revealed { opacity: 1; transform: none; }
+    details > summary::-webkit-details-marker { display:none; }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+
+  <!-- Nav -->
+  <nav class="sticky top-0 z-40 border-b border-slate-200/60 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5">
+      <a href="#top" class="flex items-center gap-2.5">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl text-white text-lg shadow-sm" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%)">✨</span>
+        <span class="text-base font-bold tracking-tight sm:text-lg">Panadería Luna</span>
+      </a>
+      <div class="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
+        <a href="#about"    class="hover:text-slate-900">Nosotros</a>
+        <a href="#services" class="hover:text-slate-900">Servicios</a>
+        <a href="#why"      class="hover:text-slate-900">Por qué</a>
+        <a href="#faq"      class="hover:text-slate-900">Preguntas</a>
+      </div>
+      <a href="#contact" class="inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5" style="background:#8B4513">
+        Contacto
+        <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h15"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero-bg relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-40"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-[1.2fr_1fr] md:py-28">
+      <div>
+        <p class="mb-5 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200">
+          <span class="inline-flex h-1.5 w-1.5 rounded-full" style="background:#F5A623"></span>
+          Panadería Artesanal · Bogotá
+        </p>
+        <h1 class="text-4xl font-extrabold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl md:text-7xl">
+          Pan artesanal de <span style="background:linear-gradient(120deg,#8B4513 0%,#F5A623 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">masa</span> madre en el corazón de Bogotá
+        </h1>
+        <p class="mt-6 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          Para familias que buscan pan real, sin conservantes. Un equipo local en Bogotá que responde pronto y hace lo que promete.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://wa.me/573001234567?text=Hola%2C%20vi%20su%20sitio%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20panader%C3%ADa%20artesanal." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-base font-semibold text-white shadow-lg ring-1 ring-black/5 transition hover:-translate-y-0.5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3Z"/></svg> Escríbenos por WhatsApp
+        </a>
+        <a href="mailto:hola@panaderialuna.co" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+          Escríbenos un correo
+        </a></div>
+        <div class="mt-10 flex flex-wrap items-center gap-2">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200">⭐ 4.9/5 · Google</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200">+500 clientes</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200">Respondemos en 10 min</span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-slate-200">
+          <img src="https://source.unsplash.com/900x1100/?business,local" alt="Panadería Luna" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -left-4 bottom-8 hidden rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-100 md:block">
+          <div class="flex items-center gap-3">
+            <div class="inline-flex h-10 w-10 items-center justify-center rounded-xl text-white" style="background:#8B4513">⚡</div>
+            <div>
+              <div class="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Estilo</div>
+              <div class="text-sm font-bold text-slate-900">cálido, artesanal</div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -right-3 top-8 hidden rounded-2xl bg-white p-3 shadow-xl ring-1 ring-slate-100 md:block">
+          <div class="flex items-center gap-2">
+            <div class="flex -space-x-2">
+              <span class="inline-flex h-7 w-7 rounded-full ring-2 ring-white" style="background:#8B4513"></span>
+              <span class="inline-flex h-7 w-7 rounded-full ring-2 ring-white" style="background:#F5A623"></span>
+              <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-slate-100 text-[10px] font-bold text-slate-600 ring-2 ring-white">+8</span>
+            </div>
+            <div class="text-xs font-semibold text-slate-700">Equipo local</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Client cloud -->
+  <section class="border-y border-slate-100 bg-white py-10">
+    <div class="mx-auto max-w-6xl px-6 text-center">
+      <p class="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-slate-400">Nos han acompañado</p>
+      <div class="flex flex-wrap items-center justify-center"><span class="text-sm font-semibold text-slate-400 tracking-wide">Cooperativa Sol</span><span class="mx-4 text-slate-300">·</span><span class="text-sm font-semibold text-slate-400 tracking-wide">Mercado Central</span><span class="mx-4 text-slate-300">·</span><span class="text-sm font-semibold text-slate-400 tracking-wide">Hotel Casa Blanca</span><span class="mx-4 text-slate-300">·</span><span class="text-sm font-semibold text-slate-400 tracking-wide">Revista Local</span><span class="mx-4 text-slate-300">·</span><span class="text-sm font-semibold text-slate-400 tracking-wide">Estudio Arte</span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Sobre nosotros</p>
+      <h2 data-reveal class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Personas reales haciendo panadería artesanal con cariño.</h2>
+      <p data-reveal class="text-lg leading-relaxed text-slate-600">En Panadería Luna no somos una cadena ni un algoritmo. Somos un equipo local en Bogotá que hace panadería artesanal con atención al detalle. Acompañamos a familias que buscan pan real, sin conservantes con cada decisión que tomamos. Lo que nos diferencia: Fermentación lenta de 24h, harina orgánica, hornos de leña.</p>
+      <div data-reveal class="mx-auto mt-12 grid max-w-2xl grid-cols-3 gap-6">
+        
+        <div class="flex flex-col items-center">
+          <div class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">+6</div>
+          <div class="mt-1 text-sm text-slate-500">años sirviendo a Bogotá</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">+2,000</div>
+          <div class="mt-1 text-sm text-slate-500">clientes felices</div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;">2019</div>
+          <div class="mt-1 text-sm text-slate-500">fundados</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mx-auto mb-14 max-w-2xl text-center">
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Servicios</p>
+        <h2 class="mb-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Todo lo que hacemos por ti</h2>
+        <p class="text-slate-600">Selecciona lo que necesitas y escríbenos por WhatsApp.</p>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        
+      <article data-reveal class="group flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-sm" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-semibold tracking-tight text-slate-900">Pan de masa madre</h3>
+        <p class="flex-1 text-sm leading-relaxed text-slate-600">Te atendemos con pan de masa madre a la medida. Agenda tu cita y resolvemos lo que necesitas sin complicarte.</p>
+        <a href="#contact" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold" style="color:#8B4513">
+          Saber más →
+        </a>
+      </article>
+      <article data-reveal class="group flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-sm" style="background:linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-semibold tracking-tight text-slate-900">Croissants franceses</h3>
+        <p class="flex-1 text-sm leading-relaxed text-slate-600">Te atendemos con croissants franceses a la medida. Agenda tu cita y resolvemos lo que necesitas sin complicarte.</p>
+        <a href="#contact" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold" style="color:#8B4513">
+          Saber más →
+        </a>
+      </article>
+      <article data-reveal class="group flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-1 hover:shadow-xl">
+        <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-sm" style="background:linear-gradient(135deg,#10B981 0%,#06B6D4 100%)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+          </svg>
+        </div>
+        <h3 class="mb-2 text-lg font-semibold tracking-tight text-slate-900">Tortas por encargo</h3>
+        <p class="flex-1 text-sm leading-relaxed text-slate-600">Te atendemos con tortas por encargo a la medida. Agenda tu cita y resolvemos lo que necesitas sin complicarte.</p>
+        <a href="#contact" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold" style="color:#8B4513">
+          Saber más →
+        </a>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unique value / feature block -->
+  <section class="py-24">
+    <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
+      <div class="relative" data-reveal>
+        <div class="aspect-[4/3] overflow-hidden rounded-3xl shadow-xl ring-1 ring-slate-200">
+          <img src="https://source.unsplash.com/1000x800/?business,local,interior" alt="Panadería Luna" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -bottom-5 -right-5 hidden rounded-2xl bg-white px-5 py-4 shadow-xl ring-1 ring-slate-100 lg:block">
+          <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">Atención</div>
+          <div class="text-base font-bold text-slate-900">Personal y cercana</div>
+        </div>
+      </div>
+      <div data-reveal>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Lo que nos hace únicos</p>
+        <h2 class="mb-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Fermentación lenta de 24h, harina orgánica, hornos de leña.</h2>
+        <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white" style="background:#8B4513">
+            <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div><div class="font-semibold text-slate-900">Calidad que se nota</div><div class="text-sm text-slate-600">Cada detalle pensado para que vuelvas.</div></div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white" style="background:#8B4513">
+            <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div><div class="font-semibold text-slate-900">Precios justos</div><div class="text-sm text-slate-600">Sin sorpresas ni letras pequeñas.</div></div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-white" style="background:#8B4513">
+            <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div><div class="font-semibold text-slate-900">Hecho con cariño</div><div class="text-sm text-slate-600">Un equipo que disfruta lo que hace.</div></div>
+        </li></ul>
+        
+        <a href="https://wa.me/573001234567?text=Hola%2C%20vi%20su%20sitio%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20panader%C3%ADa%20artesanal." target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:-translate-y-0.5" style="background:#8B4513">
+          Agenda una cita
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="mx-auto mb-14 max-w-2xl text-center">
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Nuestra diferencia</p>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Lo que cambia cuando trabajas con nosotros</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+      <div data-reveal class="rounded-2xl bg-white p-7 ring-1 ring-slate-100 shadow-sm">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl text-white" style="background:#8B4513">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="mb-1 text-base font-semibold text-slate-900">Respondemos rápido</h3>
+        <p class="text-sm leading-relaxed text-slate-600">Mensajes contestados en menos de 10 minutos durante horas hábiles.</p>
+      </div>
+      <div data-reveal class="rounded-2xl bg-white p-7 ring-1 ring-slate-100 shadow-sm">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl text-white" style="background:#F5A623">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 3-3.87m3-6a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm7-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+        </div>
+        <h3 class="mb-1 text-base font-semibold text-slate-900">Trato cercano</h3>
+        <p class="text-sm leading-relaxed text-slate-600">Te conocemos por tu nombre, no por tu número de ticket.</p>
+      </div>
+      <div data-reveal class="rounded-2xl bg-white p-7 ring-1 ring-slate-100 shadow-sm">
+        <div class="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl text-white" style="background:#8B4513">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h3 class="mb-1 text-base font-semibold text-slate-900">Resultados reales</h3>
+        <p class="text-sm leading-relaxed text-slate-600">Cada cliente se va sintiéndose mejor de cómo llegó.</p>
+      </div></div>
+    </div>
+  </section>
+
+
+  <section class="bg-white py-24">
+    <div class="mx-auto max-w-4xl px-6">
+      <p class="mb-3 text-center text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Lo que dicen</p>
+      <h2 class="mx-auto mb-12 max-w-2xl text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Clientes contentos en Bogotá</h2>
+      <figure data-reveal class="relative mx-auto max-w-3xl rounded-3xl bg-slate-50 p-10 ring-1 ring-slate-100 shadow-sm sm:p-14">
+        <svg class="absolute left-6 top-6 h-10 w-10 opacity-20" viewBox="0 0 24 24" fill="currentColor" style="color:#8B4513">
+          <path d="M7.17 6.17A5 5 0 0 0 4 11v7h7v-7H6.5a2.5 2.5 0 0 1 2.5-2.5v-2a4.5 4.5 0 0 0-1.83.67zM17.17 6.17A5 5 0 0 0 14 11v7h7v-7h-4.5a2.5 2.5 0 0 1 2.5-2.5v-2a4.5 4.5 0 0 0-1.83.67z"/>
+        </svg>
+        <blockquote class="relative text-xl font-medium leading-relaxed text-slate-800 sm:text-2xl">“El mejor pan que he probado en Bogotá.”</blockquote>
+        <figcaption class="mt-6 text-sm font-semibold text-slate-500">— Camila R.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24">
+    <div class="mx-auto max-w-3xl px-6">
+      <div class="mb-12 text-center">
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Preguntas frecuentes</p>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">Dudas que escuchamos seguido</h2>
+      </div>
+      <div class="space-y-3">
+      <details data-reveal class="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition open:ring-slate-300">
+        <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900">
+          <span>¿Cómo agendo una cita?</span>
+          <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Lo más rápido es por WhatsApp al +573001234567. También puedes escribirnos al correo y te respondemos el mismo día.</p>
+      </details>
+      <details data-reveal class="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition open:ring-slate-300">
+        <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900">
+          <span>¿Qué métodos de pago aceptan?</span>
+          <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Aceptamos efectivo, transferencia, Nequi/Daviplata, y tarjeta.</p>
+      </details>
+      <details data-reveal class="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition open:ring-slate-300">
+        <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900">
+          <span>¿Atienden los fines de semana?</span>
+          <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Sí. Sábados de 9 a 5. Domingos con cita previa.</p>
+      </details>
+      <details data-reveal class="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition open:ring-slate-300">
+        <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900">
+          <span>¿Hacen envíos o atienden a domicilio?</span>
+          <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Sí, en Bogotá y alrededores. Escríbenos para coordinar.</p>
+      </details>
+      <details data-reveal class="group rounded-2xl bg-white p-6 ring-1 ring-slate-200 transition open:ring-slate-300">
+        <summary class="flex cursor-pointer list-none items-center justify-between text-base font-semibold text-slate-900">
+          <span>¿Dan factura electrónica?</span>
+          <svg class="h-5 w-5 shrink-0 text-slate-400 transition group-open:rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Claro. Pídela al momento de pagar y te la enviamos al correo.</p>
+      </details></div>
+    </div>
+  </section>
+
+  
+  <section class="relative overflow-hidden py-24">
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%)"></div>
+    <div class="absolute inset-0 opacity-20" style="background:radial-gradient(700px 300px at 20% 20%, rgba(255,255,255,0.4), transparent 60%),radial-gradient(600px 300px at 80% 80%, rgba(255,255,255,0.25), transparent 60%);"></div>
+    <div class="relative mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">Listos cuando tú lo estés.</h2>
+      <p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">Un mensaje basta para empezar — respondemos en minutos.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        
+        <a href="https://wa.me/573001234567?text=Hola%2C%20vi%20su%20sitio%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20panader%C3%ADa%20artesanal." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-base font-semibold text-white shadow-lg ring-1 ring-black/5 transition hover:-translate-y-0.5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3Z"/></svg> Escríbenos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="mx-auto mb-12 max-w-xl text-center">
+        <p class="mb-3 text-xs font-semibold uppercase tracking-[0.15em]" style="color:#8B4513">Hablemos</p>
+        <h2 class="mb-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">¿Cómo prefieres contactarnos?</h2>
+        <p class="text-slate-600">Elige el canal más cómodo para ti.</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+
+        <a href="https://wa.me/573001234567" target="_blank" rel="noopener" class="group flex items-center gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-lg">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#25D366] text-white"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3Z"/></svg></div>
+          <div class="min-w-0">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">WhatsApp</div>
+            <div class="truncate font-semibold text-slate-900">+573001234567</div>
+          </div>
+        </a>
+
+        <a href="mailto:hola@panaderialuna.co" class="group flex items-center gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-lg">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl text-white" style="background:#8B4513">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+          </div>
+          <div class="min-w-0">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">Email</div>
+            <div class="truncate font-semibold text-slate-900">hola@panaderialuna.co</div>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/panaderialuna" target="_blank" rel="noopener" class="group flex items-center gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-lg">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-tr from-amber-400 via-pink-500 to-purple-600 text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+          </div>
+          <div class="min-w-0">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">Instagram</div>
+            <div class="truncate font-semibold text-slate-900">@panaderialuna</div>
+          </div>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Cra%2013%20%2385-32%2C%20Chapinero" target="_blank" rel="noopener" class="group flex items-center gap-4 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:shadow-lg">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl text-white" style="background:#F5A623">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19 9a7 7 0 1 0-14 0c0 5 7 13 7 13s7-8 7-13Z"/></svg>
+          </div>
+          <div class="min-w-0">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">Dirección</div>
+            <div class="truncate font-semibold text-slate-900">Cra 13 #85-32, Chapinero</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-12">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl text-white text-lg shadow-sm" style="background:linear-gradient(135deg,#8B4513 0%,#F5A623 100%)">✨</span>
+            <span class="text-base font-bold tracking-tight">Panadería Luna</span>
+          </div>
+          <p class="mt-3 max-w-xs text-sm text-slate-500">Pan artesanal de masa madre en el corazón de Bogotá</p>
+        </div>
+        <div>
+          <div class="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400">Contacto</div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li>+573001234567</li>
+            <li>hola@panaderialuna.co</li>
+            <li>@panaderialuna</li>
+            <li>Cra 13 #85-32, Chapinero</li>
+          </ul>
+        </div>
+        <div>
+          <div class="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400">Secciones</div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li><a href="#about" class="hover:text-slate-900">Nosotros</a></li>
+            <li><a href="#services" class="hover:text-slate-900">Servicios</a></li>
+            <li><a href="#why" class="hover:text-slate-900">Por qué</a></li>
+            <li><a href="#faq" class="hover:text-slate-900">Preguntas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-6 text-sm text-slate-500 sm:flex-row">
+        <div>© 2026 Panadería Luna. Todos los derechos reservados.</div>
+        <a href="https://blip.company" target="_blank" rel="noopener" class="hover:text-slate-700">Hecho con Blip →</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="https://wa.me/573001234567?text=Hola%2C%20vi%20su%20sitio%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20panader%C3%ADa%20artesanal." target="_blank" rel="noopener" aria-label="WhatsApp"
+     class="group fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 rounded-full bg-[#25D366] px-5 py-3 text-white shadow-xl ring-1 ring-black/5 transition hover:scale-105">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3Z"/></svg>
+    <span class="hidden text-sm font-semibold sm:inline">Responde en minutos</span>
+  </a>
+
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+  </script>
+
+</body>
+</html>
